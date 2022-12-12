@@ -16,6 +16,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - 🚀 Live Demo
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Clone](#prerequisites)
@@ -51,6 +52,10 @@ This project built with Html, CSS and Javascript
 - **[Desktop version using Media query]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo
+Here is my link to my project
+ - https://kiplaacollo.github.io/
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
