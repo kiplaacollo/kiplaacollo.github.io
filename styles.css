@@ -1217,9 +1217,9 @@ button:hover {
   flex-grow: 0;
 }
 
-/* .desktop {
+.desktop {
   display: none;
-} */
+} 
 
 .input,
 textarea {
@@ -1342,6 +1342,16 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
+/*label input{
+ display:block;
+ float:left;
+
+ }*/
+
+ label {
+  visibility:hidden;
+ }
 
 @media screen and (min-width: 768px) {
   body {
@@ -1696,6 +1706,8 @@ footer {
     left: 135px;
     top: 3139px;
   }
+  
+
 
   .txtF {
     display: flex;
@@ -1800,7 +1812,17 @@ footer {
     flex: none;
     order: 0;
     flex-grow: 0;
+    
   }
+
+label input{
+  display:block;
+float:left;
+
+ }
+ label {
+  visibility:hidden;
+ }
 
   .lname {
     width: 330px;

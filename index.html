@@ -217,12 +217,24 @@
                 <form action="https://formspree.io/f/mgeqgykl" method="post">
                     <span class="mobile"><input type="text"  id="fullname"  required class="fname" name="fullname" placeholder="Full name" maxlength="30"></span>
                     <span class="desktop">
-                    <input type="text"  id="fullname"  required class="frname" name="fullname" placeholder="First Name" maxlength="30">
+                    <div >
+                        <label for="firstname">Firstname</label>
+                        <input type="text"  id="fullname"  required class="frname" name="fullname" placeholder="First Name" maxlength="30">
+                    </div>
+                    <div>
+                    <label for="laname">Lastname</label>
                     <input type="text"  id="fullname"  required class="lname" name="fullname" placeholder="Last Name" maxlength="30">
+                    </div>
                     </span>
-                   <input type="email" id="fullname" required class="email" name="email" placeholder="Email address">
+                    <div>
+                    <label for="lemail">Email</label>
+                    <input type="email" id="fullname" required class="email" name="email" placeholder="Email address">
+                </div>
                     <span class="desktop">
-                    <textarea class="txt_area" id="fullname" required placeholder="Typing something " maxlength="500"></textarea>
+                        <div>
+                        <label for="msg">Message</label>
+                        <textarea class="txt_area" id="fullname" required placeholder="Typing something " maxlength="500"></textarea>
+                    </div>
                     </span>
                     <span class="mobile"><textarea class="txt_area" id="fullname" required placeholder="Enter text here" maxlength="500"></textarea></span>
                         <input type="submit" name="button" id="button" value="Get in touch" class="button_f">
