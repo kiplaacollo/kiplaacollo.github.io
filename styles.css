@@ -1219,7 +1219,7 @@ button:hover {
 
 .desktop {
   display: none;
-} 
+}
 
 .input,
 textarea {
@@ -1343,15 +1343,15 @@ footer {
   align-items: center;
 }
 
-/*label input{
+/* label input{
  display:block;
  float:left;
 
- }*/
+ } */
 
- label {
-  visibility:hidden;
- }
+label {
+  visibility: hidden;
+}
 
 @media screen and (min-width: 768px) {
   body {
@@ -1706,8 +1706,6 @@ footer {
     left: 135px;
     top: 3139px;
   }
-  
-
 
   .txtF {
     display: flex;
@@ -1812,17 +1810,16 @@ footer {
     flex: none;
     order: 0;
     flex-grow: 0;
-    
   }
 
-label input{
-  display:block;
-float:left;
+  label input {
+    display: block;
+    float: left;
+  }
 
- }
- label {
-  visibility:hidden;
- }
+  label {
+    visibility: hidden;
+  }
 
   .lname {
     width: 330px;
