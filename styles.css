@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  width: 375px;
+  width: 100%;
 }
 
 header a {
@@ -175,7 +175,7 @@ p {
 
 .supportive_txt {
   display: flex;
-  width: 920px;
+  width: 327px;
   height: 164px;
   font-family: "Inter", sans-serif;
   font-style: normal;
