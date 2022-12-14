@@ -175,7 +175,7 @@ p {
 
 .supportive_txt {
   display: flex;
-  width: 920px;
+  width: 327px;
   height: 164px;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -1217,9 +1217,9 @@ button:hover {
   flex-grow: 0;
 }
 
-/* .desktop {
+.desktop {
   display: none;
-} */
+}
 
 .input,
 textarea {
@@ -1341,6 +1341,16 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* label input{
+ display:block;
+ float:left;
+
+ } */
+
+label {
+  visibility: hidden;
 }
 
 @media screen and (min-width: 768px) {
@@ -1800,6 +1810,15 @@ footer {
     flex: none;
     order: 0;
     flex-grow: 0;
+  }
+
+  label input {
+    display: block;
+    float: left;
+  }
+
+  label {
+    visibility: hidden;
   }
 
   .lname {
