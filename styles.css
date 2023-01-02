@@ -23,6 +23,10 @@ header a {
   flex-grow: 0;
 }
 
+header nav {
+  cursor: pointer;
+}
+
 li {
   list-style: none;
 }
