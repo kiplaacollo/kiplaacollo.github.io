@@ -67,12 +67,9 @@ const objWorks1 = {
   linkLive: 'https//www.gitpages',
 };
 
-// const popup1 = document.getElementById('popup-window');
-// get button that opens the popup
+
 const btn1 = document.getElementById('button1');
-// get span element that closes popup
-// const span = document.getElementsByClassName('close')[0];
-// to open the button on click
+
 btn1.addEventListener('click', () => {
   const title = document.getElementById('projectTitle');
   title.innerHTML = objWorks1.title;
@@ -87,11 +84,7 @@ btn1.addEventListener('click', () => {
   button.innerHTML = 'See live <img src="images/IconGitHub.svg"></img>';
   popup.style.display = 'block';
 });
-// to close the popub
-//span.onclick = function () {
-//  popup.style.display = 'none';
-//};
-// when click anywhere
+
 window.onclick = function (event) {
   if (event.target === popup) {
     popup.style.display = 'none';
@@ -107,12 +100,9 @@ const objWorks2 = {
   linkLive: 'https//www.gitpages',
 };
 
-// const popup2 = document.getElementById('popup-window');
-// get button that opens the popup
+
 const btn2 = document.getElementById('button2');
-// get span element that closes popup
-// const span = document.getElementsByClassName('close')[0];
-// to open the button on click
+
 btn2.addEventListener('click', () => {
   const title = document.getElementById('projectTitle');
   title.innerHTML = objWorks2.title;
@@ -127,11 +117,7 @@ btn2.addEventListener('click', () => {
   button.innerHTML = 'See live <img src="images/IconGitHub.svg"></img>';
   popup.style.display = 'block';
 });
-// to close the popub
-//span.onclick = function () {
-//  popup.style.display = 'none';
-//};
-// when click anywhere
+
 window.onclick = function (event) {
   if (event.target === popup) {
     popup.style.display = 'none';
@@ -146,12 +132,9 @@ const objWorks3 = {
   linkLive: 'https//www.gitpages',
 };
 
-// const popup3 = document.getElementById('popup-window');
-// get button that opens the popup
+
 const btn3 = document.getElementById('button3');
-// get span element that closes popup
-// const span = document.getElementsByClassName('close')[0];
-// to open the button on click
+
 btn3.addEventListener('click', () => {
   const title = document.getElementById('projectTitle');
   title.innerHTML = objWorks3.title;
@@ -166,11 +149,7 @@ btn3.addEventListener('click', () => {
   button.innerHTML = 'See live <img src="images/IconGitHub.svg"></img>';
   popup.style.display = 'block';
 });
-// to close the popub
-//span.onclick = function () {
- // popup.style.display = 'none';
-//};
-// when click anywhere
+
 window.onclick = function (event) {
   if (event.target === popup) {
     popup.style.display = 'none';
@@ -185,12 +164,9 @@ const objWorks4 = {
   linkLive: 'https//www.gitpages',
 };
 
-// const popup4 = document.getElementById('popup-window');
-// get button that opens the popup
+
 const btn4 = document.getElementById('button4');
-// get span element that closes popup
-// const span = document.getElementsByClassName('close')[0];
-// to open the button on click
+
 btn4.addEventListener('click', () => {
   const title = document.getElementById('projectTitle');
   title.innerHTML = objWorks4.title;
@@ -208,11 +184,7 @@ btn4.addEventListener('click', () => {
   button.innerHTML = 'See Source [<img src="images/IconGitHub.svg"></img>]';
   popup.style.display = 'block';
 });
-// to close the popub
-  // span.onclick = function () {
-  //   popup.style.display = 'none';
-  // };
-// when click anywhere
+
 window.onclick = function (event) {
   if (event.target === popup) {
     popup.style.display = 'none';
@@ -227,11 +199,9 @@ const objWorks5 = {
   linkLive: 'https//www.gitpages',
 };
 
-// const popup5 = document.getElementById('popup-window');
 // get button that opens the popup
 const btn5 = document.getElementById('button5');
 // get span element that closes popup
-// const span = document.getElementsByClassName('close')[0];
 // to open the button on click
 btn5.addEventListener('click', () => {
   const title = document.getElementById('projectTitle');
@@ -248,9 +218,7 @@ btn5.addEventListener('click', () => {
   popup.style.display = 'block';
 });
 // to close the popub
-// span.onclick = function () {
-//   popup.style.display = 'none';
-// };
+
 // when click anywhere
 window.onclick = function (event) {
   if (event.target === popup) {
