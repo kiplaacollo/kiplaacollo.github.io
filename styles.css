@@ -701,6 +701,7 @@ p {
   flex-grow: 0;
 }
 
+
 #mobile-view-img {
   width: 100%;
 }
@@ -1878,6 +1879,17 @@ label {
   }
 
   #action {
+    position: relative;
+    top: 30px;
+    left: 64%;
+    width: 311px;
+    height: 56px;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+  }
+
+  #action1 {
     position: relative;
     top: 30px;
     left: 64%;

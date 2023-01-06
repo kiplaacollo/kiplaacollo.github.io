@@ -34,9 +34,20 @@ btn.addEventListener('click', () => {
   description.innerHTML = objWorks.description;
   const image = document.getElementById('projectImage');
   image.innerHTML = objWorks.image;
+  
+  
   const techs = document.getElementById('tags');
-  techs.innerHTML = objWorks.technologies;
+  for (let i = 0; i < objWorks['technologies'].length; i ++) {
+    techs.innerHTML = `<ul><li><button>${objWorks.technologies[0]}</button></li></ul>
+                        <ul><li><button>${objWorks.technologies[1]}</button></li></ul>
+                        <ul><li><button>${objWorks.technologies[2]}</button></li></ul>
+                        <ul><li><button>${objWorks.technologies[3]}</button></li></ul>`;
+  }
+
+  
+
   const button = document.getElementById('action');
+  const button1 = document.getElementById('action1');
   button.innerHTML = 'See live <img src="images/Iconlive.svg"></img>';
   button.innerHTML = 'See live <img src="images/IconGitHub.svg"></img>';
   popup.style.display = 'block';
