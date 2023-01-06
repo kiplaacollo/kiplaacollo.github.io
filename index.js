@@ -26,8 +26,6 @@ const objWorks = {
 const popup = document.getElementById('popup-window');
 // get button that opens the popup
 const btn = document.getElementById('button');
-// get span element that closes popup
-const span = document.getElementsById('close')[0];
 // to open the button on click
 btn.addEventListener('click', () => {
   const title = document.getElementById('projectTitle');
@@ -42,11 +40,17 @@ btn.addEventListener('click', () => {
   button.innerHTML = 'See live <img src="images/Iconlive.svg"></img>';
   button.innerHTML = 'See live <img src="images/IconGitHub.svg"></img>';
   popup.style.display = 'block';
+  document.body.style.overflow = 'none';
 });
+// get span element that closes popup
+//const span = document.getElementById('close')[0];
 // to close the popub
-span.onclick = function () {
-  popup.style.display = 'none';
-};
+/*span.onclick = function (event) {
+  if (event.target == span) {
+    popup.style.display = 'none';
+  }
+  
+};*/
 // when click anywhere
 window.onclick = function (event) {
   if (event.target === popup) {
@@ -84,9 +88,9 @@ btn1.addEventListener('click', () => {
   popup.style.display = 'block';
 });
 // to close the popub
-span.onclick = function () {
-  popup.style.display = 'none';
-};
+//span.onclick = function () {
+//  popup.style.display = 'none';
+//};
 // when click anywhere
 window.onclick = function (event) {
   if (event.target === popup) {
@@ -124,9 +128,9 @@ btn2.addEventListener('click', () => {
   popup.style.display = 'block';
 });
 // to close the popub
-span.onclick = function () {
-  popup.style.display = 'none';
-};
+//span.onclick = function () {
+//  popup.style.display = 'none';
+//};
 // when click anywhere
 window.onclick = function (event) {
   if (event.target === popup) {
@@ -163,9 +167,9 @@ btn3.addEventListener('click', () => {
   popup.style.display = 'block';
 });
 // to close the popub
-span.onclick = function () {
-  popup.style.display = 'none';
-};
+//span.onclick = function () {
+ // popup.style.display = 'none';
+//};
 // when click anywhere
 window.onclick = function (event) {
   if (event.target === popup) {
@@ -177,7 +181,7 @@ const objWorks4 = {
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
   image: '',
   technologies: ['Ruby on Rails', 'css', 'JavaScript', 'html'],
-  linkSource: 'https//www.githubrepo',
+  linkSource: 'See Live <img src="images/Iconlive.svg"></img>',
   linkLive: 'https//www.gitpages',
 };
 
@@ -195,16 +199,19 @@ btn4.addEventListener('click', () => {
   const image = document.getElementById('projectImage');
   image.innerHTML = objWorks4.image;
   const techs = document.getElementById('tags');
-  techs.innerHTML = objWorks4.technologies;
+  for (let i = 0; i < objWorks['technologies'].length; i +=1){
+    techs.innerHTML = `<ul><li><button>${objWorks.technologies[i]}</button></li></ul>`;
+  }
+  
   const button = document.getElementById('action');
   button.innerHTML = 'See live <img src="images/Iconlive.svg"></img>';
-  button.innerHTML = 'See live <img src="images/IconGitHub.svg"></img>';
+  button.innerHTML = 'See live [<img src="images/IconGitHub.svg"></img>]';
   popup.style.display = 'block';
 });
 // to close the popub
-span.onclick = function () {
-  popup.style.display = 'none';
-};
+  // span.onclick = function () {
+  //   popup.style.display = 'none';
+  // };
 // when click anywhere
 window.onclick = function (event) {
   if (event.target === popup) {
@@ -241,9 +248,9 @@ btn5.addEventListener('click', () => {
   popup.style.display = 'block';
 });
 // to close the popub
-span.onclick = function () {
-  popup.style.display = 'none';
-};
+// span.onclick = function () {
+//   popup.style.display = 'none';
+// };
 // when click anywhere
 window.onclick = function (event) {
   if (event.target === popup) {
