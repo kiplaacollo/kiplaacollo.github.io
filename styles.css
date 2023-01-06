@@ -620,7 +620,7 @@ p {
   position: absolute;
   width: 40px;
   height: 40px;
-  right: 49px;
+  left: 300px;
   border-radius: 8px;
   color: black;
   font-size: 37px;
@@ -1740,7 +1740,7 @@ label {
   #overlay {
     width: 1140px;
     height: 1990px;
-    left: 0;
+    left: 150px;
     top: 0;
     background: #c1c7d0;
     mix-blend-mode: multiply;
@@ -1771,8 +1771,9 @@ label {
     height: 616px;
     background-image: url(./images/desktopview.svg);
     border-radius: 8px;
+    position: relative;
     left: 5px;
-    top: 20px;
+    top: 60px;
     border: 1px solid #dfe1e6;
     flex: none;
     order: 0;
@@ -1783,14 +1784,17 @@ label {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 6px;
+    padding: 8px;
     position: absolute;
-    width: 40px;
-    height: 40px;
-    right: 49px;
+    width: 24px;
+    height: 33px;
+    right: 24px;
+    top: calc(50% - 40px / 2 - 497.5px);
+    mix-blend-mode: multiply;
+    background: #ebecf0;
     border-radius: 8px;
-    color: black;
     font-size: 37px;
+    left: 855px;
   }
 
   .close:hover,
@@ -1804,12 +1808,12 @@ label {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding-top: 20;
+    position: absolute;
     gap: 12px;
     width: 569px;
     height: 82px;
     left: 26px;
-    top: 718px;
+    top: 720px;
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -1825,6 +1829,8 @@ label {
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: relative;
+    top: 200px;
     gap: 8px;
     width: 500px;
     height: 32px;
@@ -1854,26 +1860,26 @@ label {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: absolute;
     padding: 0;
     gap: 12px;
-    /*width: 311px;
-    height: 313px;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
+    width: 876px;
+    height: 151px;
+    bottom: 0;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
-    color: #344563; */
+    line-height: 30px;
+    color: #344563;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
   }
 
   #action {
     position: relative;
-
-    /* top: -93px; */
-    bottom: 456px;
+    top: 30px;
     left: 64%;
     width: 311px;
     height: 56px;
@@ -1884,10 +1890,6 @@ label {
 
   #mobile-view-img {
     width: 100%;
-  }
-
-  #desktopview {
-    display: none;
   }
 
   .about_me {

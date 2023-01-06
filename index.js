@@ -43,14 +43,14 @@ btn.addEventListener('click', () => {
   document.body.style.overflow = 'none';
 });
 // get span element that closes popup
-//const span = document.getElementById('close')[0];
+const span = document.getElementById('close');
 // to close the popub
-/*span.onclick = function (event) {
-  if (event.target == span) {
-    popup.style.display = 'none';
-  }
+span.onclick = function () {
   
-};*/
+    popup.style.display = 'none';
+  
+  
+};
 // when click anywhere
 window.onclick = function (event) {
   if (event.target === popup) {
@@ -205,7 +205,7 @@ btn4.addEventListener('click', () => {
   
   const button = document.getElementById('action');
   button.innerHTML = 'See live <img src="images/Iconlive.svg"></img>';
-  button.innerHTML = 'See live [<img src="images/IconGitHub.svg"></img>]';
+  button.innerHTML = 'See Source [<img src="images/IconGitHub.svg"></img>]';
   popup.style.display = 'block';
 });
 // to close the popub
