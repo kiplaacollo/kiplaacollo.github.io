@@ -1852,11 +1852,11 @@ label {
 
   #projectDescription {
     display: flex;
-    /*flex-direction: column;
+    flex-direction: column;
     align-items: center;
     padding: 0;
     gap: 12px;
-    width: 311px;
+    /*width: 311px;
     height: 313px;
     flex: none;
     order: 2;
