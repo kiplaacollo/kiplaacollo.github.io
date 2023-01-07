@@ -1920,7 +1920,6 @@ label {
     flex-grow: 0;
   }
 
-
   #actionBtn {
     display: flex;
     flex-direction: row;
@@ -1931,9 +1930,6 @@ label {
     height: 48px;
     left: 570px;
     top: 720px;
-
-    /* Success/G300 */
-
     background: #36b37e;
     border-radius: 8px;
 
