@@ -34,22 +34,15 @@ btn.addEventListener('click', () => {
   description.innerHTML = objWorks.description;
   const image = document.getElementById('projectImage');
   image.innerHTML = objWorks.image;
-  
-  
+
   const techs = document.getElementById('tags');
-  for (let i = 0; i < objWorks['technologies'].length; i ++) {
+  for (let i = 0; i < objWorks.technologies.length; i += 1) {
     techs.innerHTML = `<ul><li><button>${objWorks.technologies[0]}</button></li></ul>
                         <ul><li><button>${objWorks.technologies[1]}</button></li></ul>
                         <ul><li><button>${objWorks.technologies[2]}</button></li></ul>
                         <ul><li><button>${objWorks.technologies[3]}</button></li></ul>`;
   }
 
-  
-
-  const button = document.getElementById('action');
-  const button1 = document.getElementById('action1');
-  button.innerHTML = 'See live <img src="images/Iconlive.svg"></img>';
-  button.innerHTML = 'See live <img src="images/IconGitHub.svg"></img>';
   popup.style.display = 'block';
   document.body.style.overflow = 'none';
 });
@@ -57,10 +50,7 @@ btn.addEventListener('click', () => {
 const span = document.getElementById('close');
 // to close the popub
 span.onclick = function () {
-  
-    popup.style.display = 'none';
-  
-  
+  popup.style.display = 'none';
 };
 // when click anywhere
 window.onclick = function (event) {
@@ -78,7 +68,6 @@ const objWorks1 = {
   linkLive: 'https//www.gitpages',
 };
 
-
 const btn1 = document.getElementById('button1');
 
 btn1.addEventListener('click', () => {
@@ -88,11 +77,15 @@ btn1.addEventListener('click', () => {
   description.innerHTML = objWorks1.description;
   const image = document.getElementById('projectImage');
   image.innerHTML = objWorks1.image;
+
   const techs = document.getElementById('tags');
-  techs.innerHTML = objWorks1.technologies;
-  const button = document.getElementById('action');
-  button.innerHTML = 'See live <img src="images/Iconlive.svg"></img>';
-  button.innerHTML = 'See live <img src="images/IconGitHub.svg"></img>';
+  for (let i = 0; i < objWorks.technologies.length; i += 1) {
+    techs.innerHTML = `<ul><li><button>${objWorks.technologies[0]}</button></li></ul>
+                        <ul><li><button>${objWorks.technologies[1]}</button></li></ul>
+                        <ul><li><button>${objWorks.technologies[2]}</button></li></ul>
+                        <ul><li><button>${objWorks.technologies[3]}</button></li></ul>`;
+  }
+
   popup.style.display = 'block';
 });
 
@@ -111,7 +104,6 @@ const objWorks2 = {
   linkLive: 'https//www.gitpages',
 };
 
-
 const btn2 = document.getElementById('button2');
 
 btn2.addEventListener('click', () => {
@@ -122,10 +114,13 @@ btn2.addEventListener('click', () => {
   const image = document.getElementById('projectImage');
   image.innerHTML = objWorks2.image;
   const techs = document.getElementById('tags');
-  techs.innerHTML = objWorks2.technologies;
-  const button = document.getElementById('action');
-  button.innerHTML = 'See live <img src="images/Iconlive.svg"></img>';
-  button.innerHTML = 'See live <img src="images/IconGitHub.svg"></img>';
+  for (let i = 0; i < objWorks.technologies.length; i += 1) {
+    techs.innerHTML = `<ul><li><button>${objWorks.technologies[0]}</button></li></ul>
+                        <ul><li><button>${objWorks.technologies[1]}</button></li></ul>
+                        <ul><li><button>${objWorks.technologies[2]}</button></li></ul>
+                        <ul><li><button>${objWorks.technologies[3]}</button></li></ul>`;
+  }
+
   popup.style.display = 'block';
 });
 
@@ -143,7 +138,6 @@ const objWorks3 = {
   linkLive: 'https//www.gitpages',
 };
 
-
 const btn3 = document.getElementById('button3');
 
 btn3.addEventListener('click', () => {
@@ -153,11 +147,15 @@ btn3.addEventListener('click', () => {
   description.innerHTML = objWorks3.description;
   const image = document.getElementById('projectImage');
   image.innerHTML = objWorks3.image;
+
   const techs = document.getElementById('tags');
-  techs.innerHTML = objWorks3.technologies;
-  const button = document.getElementById('action');
-  button.innerHTML = 'See live <img src="images/Iconlive.svg"></img>';
-  button.innerHTML = 'See live <img src="images/IconGitHub.svg"></img>';
+  for (let i = 0; i < objWorks.technologies.length; i += 1) {
+    techs.innerHTML = `<ul><li><button>${objWorks.technologies[0]}</button></li></ul>
+                        <ul><li><button>${objWorks.technologies[1]}</button></li></ul>
+                        <ul><li><button>${objWorks.technologies[2]}</button></li></ul>
+                        <ul><li><button>${objWorks.technologies[3]}</button></li></ul>`;
+  }
+
   popup.style.display = 'block';
 });
 
@@ -175,7 +173,6 @@ const objWorks4 = {
   linkLive: 'https//www.gitpages',
 };
 
-
 const btn4 = document.getElementById('button4');
 
 btn4.addEventListener('click', () => {
@@ -185,14 +182,15 @@ btn4.addEventListener('click', () => {
   description.innerHTML = objWorks4.description;
   const image = document.getElementById('projectImage');
   image.innerHTML = objWorks4.image;
+
   const techs = document.getElementById('tags');
-  for (let i = 0; i < objWorks['technologies'].length; i +=1){
-    techs.innerHTML = `<ul><li><button>${objWorks.technologies[i]}</button></li></ul>`;
+  for (let i = 0; i < objWorks.technologies.length; i += 1) {
+    techs.innerHTML = `<ul><li><button>${objWorks.technologies[0]}</button></li></ul>
+                        <ul><li><button>${objWorks.technologies[1]}</button></li></ul>
+                        <ul><li><button>${objWorks.technologies[2]}</button></li></ul>
+                        <ul><li><button>${objWorks.technologies[3]}</button></li></ul>`;
   }
-  
-  const button = document.getElementById('action');
-  button.innerHTML = 'See live <img src="images/Iconlive.svg"></img>';
-  button.innerHTML = 'See Source [<img src="images/IconGitHub.svg"></img>]';
+
   popup.style.display = 'block';
 });
 
@@ -221,11 +219,15 @@ btn5.addEventListener('click', () => {
   description.innerHTML = objWorks5.description;
   const image = document.getElementById('projectImage');
   image.innerHTML = objWorks5.image;
+
   const techs = document.getElementById('tags');
-  techs.innerHTML = objWorks5.technologies;
-  const button = document.getElementById('action');
-  button.innerHTML = 'See live <img src="images/Iconlive.svg"></img>';
-  button.innerHTML = 'See live <img src="images/IconGitHub.svg"></img>';
+  for (let i = 0; i < objWorks.technologies.length; i += 1) {
+    techs.innerHTML = `<ul><li><button>${objWorks.technologies[0]}</button></li></ul>
+                        <ul><li><button>${objWorks.technologies[1]}</button></li></ul>
+                        <ul><li><button>${objWorks.technologies[2]}</button></li></ul>
+                        <ul><li><button>${objWorks.technologies[3]}</button></li></ul>`;
+  }
+
   popup.style.display = 'block';
 });
 // to close the popub
