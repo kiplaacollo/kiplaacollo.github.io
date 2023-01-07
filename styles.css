@@ -532,10 +532,6 @@ p {
 .url-actionBtn {
   width: 311px;
   height: 56px;
-
-
-  /* Inside auto layout */
-
   flex: none;
   order: 3;
   flex-grow: 0;
