@@ -439,7 +439,7 @@ p {
   justify-content: center;
 }
 
-.tag li {
+.tag-Btn {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -527,6 +527,18 @@ p {
   background: #ebf0ee;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
+}
+
+.url-actionBtn {
+  width: 311px;
+height: 56px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 3;
+flex-grow: 0;
 }
 
 #actionBtn {
